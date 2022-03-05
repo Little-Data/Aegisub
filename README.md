@@ -1,21 +1,21 @@
 [![Build Status](https://github.com/wangqr/Aegisub/actions/workflows/gha-ci.yml/badge.svg)](https://github.com/wangqr/Aegisub/actions/workflows/gha-ci.yml)
 
 # Aegisub
+### 以下翻译均来自Google翻译，有任何问题请到https://github.com/wangqr/Aegisub/
 
-For binaries and general information see [the homepage](http://www.aegisub.org) and [release page](https://github.com/wangqr/Aegisub/releases).
+有关二进制文件和一般信息，请参阅 [the homepage](http://www.aegisub.org) 和 [release page](https://github.com/wangqr/Aegisub/releases).
 
-The bug tracker can be found at https://github.com/wangqr/Aegisub/issues .
+错误跟踪器可以在https://github.com/wangqr/Aegisub/issues .
 
-If you want to test the upstream version, r8942 [can be downloaded here](http://www.plorkyeran.com/aegisub/). If both r8942 and this fork have some common issue, report at [upstream](https://github.com/Aegisub/Aegisub/issues) may let more people see your issue, and I am also watching the upstream for issues. If it is a wangqr fork specific issue, report it here.
+如果要测试上游版本，r8942 [可以在这里下载](http://www.plorkyeran.com/aegisub/). 如果 r8942 和这个 fork 都有一些共同的问题，请报告 [upstream](https://github.com/Aegisub/Aegisub/issues) 可能会让更多人看到你的问题，我也在关注上游的问题。 如果是 wangqr fork 特定问题，请在此处报告。
 
-Support is available on IRC ( irc://irc.rizon.net/aegisub , for upstream version) or via issues.
+IRC 上提供支持 ( irc://irc.rizon.net/aegisub ,对于上游版本)或通过issues.
 
-## Building Aegisub
+## 构建Aegisub
 
 ### autoconf / make (for linux and macOS)
 
-This is the recommended way of building Aegisub on linux and macOS. Currently AviSynth+ support is not included in autoconf project. If you need AviSynth+ support, see CMake instructions below.
-
+这是在 linux 和 macOS 上构建 Aegisub 的推荐方式。 目前 AviSynth+ 支持不包含在 autoconf 项目中。 如果您需要 AviSynth+ 支持，请参阅下面的 CMake 说明。
 Aegisub has some required dependencies:
 * `libass`
 * `Boost`(with ICU support)
@@ -26,7 +26,7 @@ Aegisub has some required dependencies:
 * `fontconfig` (not needed on Windows)
 * `luajit` (or `lua`)
 
-and optional dependencies:
+和可选依赖项：
 * `ALSA`
 * `FFMS2`
 * `FFTW`
@@ -35,13 +35,13 @@ and optional dependencies:
 * `uchardet`
 * `AviSynth+`
 
-You can use the package manager provided by your distro to install these dependencies. Package name varies by distro. Some useful references are:
+您可以使用发行版提供的包管理器来安装这些依赖项。 软件包名称因发行版而异。 一些有用的参考资料是：
 
-* For ArchLinux, refer to [AUR](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=aegisub-git).
-* For Ubuntu, refer to [Travis](.travis.yml#L14-L32).
-* For macOS, see [Special notice for macOS](https://github.com/wangqr/Aegisub/wiki/Special-notice-for-macOS) on project Wiki.
+* 对于 ArchLinux，请参阅 [AUR](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=aegisub-git).
+* 对于 Ubuntu，请参阅 [Travis](.travis.yml#L14-L32).
+* 对于 macOS，请参阅 [Special notice for macOS](https://github.com/wangqr/Aegisub/wiki/Special-notice-for-macOS) 在项目wiki上.
 
-After installing the dependencies, you can clone and build Aegisub with:
+安装依赖项后，您可以使用以下命令克隆和构建 Aegisub：
 ```sh
 git clone https://github.com/wangqr/Aegisub.git
 cd Aegisub
@@ -52,12 +52,11 @@ make
 
 ### CMake (for Windows, linux and macOS)
 
-This fork also provides CMake build. Currently only x86 and x64 are supported due to limited support for building LuaJIT using CMake.
+此 fork 还提供 CMake 构建。 由于对使用 CMake 构建 LuaJIT 的支持有限，目前仅支持 x86 和 x64。
 
-You still need to install the dependencies above. To enable AviSynth+ support, it is also needed. Installing dependencies on Windows can be tricky, as Windows doesn't have a good package manager. Refer to [the Wiki page](https://github.com/wangqr/Aegisub/wiki/Compile-guide-for-Windows-(CMake,-MSVC)) on how to get all dependencies on Windows.
+您仍然需要安装上面的依赖项。 要启用 AviSynth+ 支持，还需要它。 在 Windows 上安装依赖项可能很棘手，因为 Windows 没有一个好的包管理器。 参考 [the Wiki page](https://github.com/wangqr/Aegisub/wiki/Compile-guide-for-Windows-(CMake,-MSVC)) 关于如何获取 Windows 上的所有依赖项。
 
-After installing the dependencies, you can clone and build Aegisub with:
-
+安装依赖项后，您可以使用以下命令克隆和构建 Aegisub：
 ```sh
 git clone https://github.com/wangqr/Aegisub.git
 cd Aegisub
@@ -68,22 +67,22 @@ cmake ..  # Or use cmake-gui / ccmake
 make
 ```
 
-Features can be turned on/off in CMake by toggling the `WITH_*` switches.
+可以通过切换 CMake 中的功能来打开/关闭`WITH_*` 开关。
 
-For Archlinux users, you can also try the [PKGBUILD in project wiki](https://github.com/wangqr/Aegisub/wiki/PKGBUILD-for-Arch).
+Archlinux 用户也可以试试[PKGBUILD in project wiki](https://github.com/wangqr/Aegisub/wiki/PKGBUILD-for-Arch).
 
-## Updating Moonscript
+## 更新 Moonscript
 
-From within the Moonscript repository, run `bin/moon bin/splat.moon -l moonscript moonscript/ > bin/moonscript.lua`.
-Open the newly created `bin/moonscript.lua`, and within it make the following changes:
+从 Moonscript 存储库中，运行`bin/moon bin/splat.moon -l moonscript moonscript/ > bin/moonscript.lua`.
+打开新建的 `bin/moonscript.lua`, 并在其中进行以下更改：
 
-1. Prepend the final line of the file, `package.preload["moonscript"]()`, with a `return`, producing `return package.preload["moonscript"]()`.
-2. Within the function at `package.preload['moonscript.base']`, remove references to `moon_loader`, `insert_loader`, and `remove_loader`. This means removing their declarations, definitions, and entries in the returned table.
-3. Within the function at `package.preload['moonscript']`, remove the line `_with_0.insert_loader()`.
+1. 前置文件的最后一行, `package.preload["moonscript"]()`,与 `return`, producing `return package.preload["moonscript"]()`.
+2. 在函数内`package.preload['moonscript.base']`, 删除 `moon_loader`, `insert_loader`, 和 `remove_loader`. 这意味着在返回的表中删除它们的声明、定义和条目。
+3. 在函数内 `package.preload['moonscript']`, 删除该行 `_with_0.insert_loader()`.
 
-The file is now ready for use, to be placed in `automation/include` within the Aegisub repo.
+该文件现在可以使用了，可以放入 `automation/include` 在 Aegisub 存储库中。
 
-## License
+## 许可证
 
-All files in this repository are licensed under various GPL-compatible BSD-style licenses; see LICENCE and the individual source files for more information.
-The official Windows build is GPLv2 due to including fftw3.
+此存储库中的所有文件均根据各种与 GPL 兼容的 BSD 样式许可进行许可； 有关详细信息，请参阅许可证和各个源文件。
+由于包含 fftw3，官方的 Windows 版本是 GPLv2。
