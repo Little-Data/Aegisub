@@ -9,7 +9,7 @@
 
 错误跟踪器可以在https://github.com/wangqr/Aegisub/issues .
 
-如果要测试上游版本，r8942 [可以在这里下载](http://www.plorkyeran.com/aegisub/). 如果 r8942 和这个 fork 都有一些共同的问题，请报告 [upstream](https://github.com/Aegisub/Aegisub/issues) 可能会让更多人看到你的问题，我也在关注上游的问题。 如果是 wangqr fork 特定问题，请在此处报告。
+如果要测试上游版本，r8942 [可以在这里下载](https://github.com/Little-Data/Aegisub-storaged/releases/tag/r8942)或者http://www.plorkyeran.com/aegisub/. 如果 r8942 和这个 fork 都有一些共同的问题，请报告 [upstream](https://github.com/Aegisub/Aegisub/issues) 可能会让更多人看到你的问题，我也在关注上游的问题。 如果是 wangqr fork 特定问题，请在此处报告。
 
 IRC 上提供支持 ( irc://irc.rizon.net/aegisub ,对于上游版本)或通过issues.
 
