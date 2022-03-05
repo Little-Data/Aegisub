@@ -3,6 +3,8 @@
 # Aegisub
 ### 以下翻译均来自Google翻译，有任何问题请到https://github.com/wangqr/Aegisub/
 
+### 本库为文件存储库
+
 有关二进制文件和一般信息，请参阅 [the homepage](http://www.aegisub.org) 和 [release page](https://github.com/wangqr/Aegisub/releases).
 
 错误跟踪器可以在https://github.com/wangqr/Aegisub/issues .
