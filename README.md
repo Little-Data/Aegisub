@@ -1,17 +1,17 @@
 [![Build Status](https://github.com/wangqr/Aegisub/actions/workflows/gha-ci.yml/badge.svg)](https://github.com/wangqr/Aegisub/actions/workflows/gha-ci.yml)
 
 # Aegisub
-### 以下翻译均来自Google翻译，有任何问题请到https://github.com/wangqr/Aegisub/
+### 以下翻译均来自Google翻译，有任何问题请到[wangqr维护的发行版](https://github.com/wangqr/Aegisub/releases)
 
 ### 本库为文件存储库
 
-有关二进制文件和一般信息，请参阅 [the homepage](http://www.aegisub.org) 和 [release page](https://github.com/wangqr/Aegisub/releases).
+有关二进制文件和一般信息，请参阅 [Aegisub官方网站](http://www.aegisub.org) 
 
-错误跟踪器可以在https://github.com/wangqr/Aegisub/issues .
+错误跟踪器可以在[wangqr维护的发行版issues](https://github.com/wangqr/Aegisub/issues).
 
-如果要测试上游版本，r8942 [可以在这里下载](https://github.com/Little-Data/Aegisub-storaged/releases/tag/r8942)或者http://www.plorkyeran.com/aegisub/. 如果 r8942 和这个 fork 都有一些共同的问题，请报告 [upstream](https://github.com/Aegisub/Aegisub/issues) 可能会让更多人看到你的问题，我也在关注上游的问题。 如果是 wangqr fork 特定问题，请在此处报告。
+如果要测试官方上游版本，r8942 [可以从Little-Data下载](https://github.com/Little-Data/Aegisub-storaged/releases/tag/r8942)或者[到官方测试发行版](http://www.plorkyeran.com/aegisub/). 如果 r8942 和这个正式版都有一些共同的问题，请到wangqr维护的发行版或[Aegisub官方issues页面](https://github.com/Aegisub/Aegisub/issues)（官方issues页面现在**没人管**）可能会让更多人看到你的问题
 
-IRC 上提供支持 ( irc://irc.rizon.net/aegisub ,对于上游版本)或通过issues.
+IRC 上提供支持 ( irc://irc.rizon.net/aegisub ,对于上游版本，现在**没人管**)或通过issues.
 
 ## 构建Aegisub
 
@@ -37,7 +37,7 @@ Aegisub has some required dependencies:
 * `uchardet`
 * `AviSynth+`
 
-您可以使用发行版提供的包管理器来安装这些依赖项。 软件包名称因发行版而异。 一些有用的参考资料是：
+可以使用发行版提供的包管理器来安装这些依赖项。 软件包名称因发行版而异。 一些有用的参考资料是：
 
 * 对于 ArchLinux，请参阅 [AUR](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=aegisub-git).
 * 对于 Ubuntu，请参阅 [Travis](.travis.yml#L14-L32).
@@ -56,7 +56,7 @@ make
 
 此 fork 还提供 CMake 构建。 由于对使用 CMake 构建 LuaJIT 的支持有限，目前仅支持 x86 和 x64。
 
-您仍然需要安装上面的依赖项。 要启用 AviSynth+ 支持，还需要它。 在 Windows 上安装依赖项可能很棘手，因为 Windows 没有一个好的包管理器。 参考 [the Wiki page](https://github.com/wangqr/Aegisub/wiki/Compile-guide-for-Windows-(CMake,-MSVC)) 关于如何获取 Windows 上的所有依赖项。
+您仍然需要安装上面的依赖项。 要启用 AviSynth+ 支持还需要它。 在 Windows 上安装依赖项可能很棘手，因为 Windows 没有一个好的包管理器。 参考 [the Wiki page](https://github.com/wangqr/Aegisub/wiki/Compile-guide-for-Windows-(CMake,-MSVC)) 关于如何获取 Windows 上的所有依赖项。
 
 安装依赖项后，您可以使用以下命令克隆和构建 Aegisub：
 ```sh
